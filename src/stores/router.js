@@ -25,7 +25,12 @@ export const currentRoute = writable(getRouteFromUrl());
 
 export function navigate(url) {
   if (typeof window === 'undefined') return;
-  window.history.pushState({}, '', url);
+  
+  const base = '/sajwin.github.io';
+  // Check if the url already has the base, if not, prepend it
+  const fullPath = url.startsWith(base) ? url : `${base}${url.startsWith('/') ? '' : '/'}${url}`;
+  
+  window.history.pushState({}, '', fullPath);
   currentRoute.set(getRouteFromUrl());
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
