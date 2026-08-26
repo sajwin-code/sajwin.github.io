@@ -9,6 +9,7 @@
   function toggleCard() {
     isCardFlipped = !isCardFlipped;
   }
+
 </script>
 
 <div class="polix-page">
@@ -32,7 +33,7 @@
     <!-- PoliX Branding Header -->
     <div class="brand-hero-box glass-card">
       <div class="polix-logo-wrapper">
-        <img src="/images/polix/polix_logo.png" alt="PoliX Logo" class="polix-brand-logo" />
+        <img src="/sajwin.github.io/assets/images/polix/polix_logo.png" alt="PoliX Logo" class="polix-brand-logo" />
       </div>
       <p class="brand-tagline">Custom Websites • Business Solutions</p>
       <div class="founder-badge">
@@ -56,8 +57,8 @@
           <div class="card-face card-front">
             <div class="card-inner-front">
               <div class="card-front-logo-wrap">
-                <img src="/images/polix/polix_icon.png" alt="PoliX Asterisk" class="card-asterisk-icon" />
-                <img src="/images/polix/polix_wordmark.png" alt="PoliX" class="card-wordmark-img" />
+                <img src="/sajwin.github.io/assets/images/polix/polix_icon.png" alt="PoliX Asterisk" class="card-asterisk-icon" />
+                <img src="/sajwin.github.io/assets/images/polix/polix_wordmark.png" alt="PoliX" class="card-wordmark-img" />
               </div>
               <p class="card-tagline-text">Custom Websites • Business Solutions</p>
               <div class="card-flip-prompt">
@@ -97,7 +98,7 @@
                 <div class="qr-mockup-frame">
                   <div class="qr-code-graphic">
                     <i class="fas fa-qrcode qr-icon"></i>
-                    <img src="/images/polix/polix_icon.png" alt="PoliX" class="qr-center-logo" />
+                    <img src="sajwin.github.io/assets/images/polix/polix_icon.png" alt="PoliX" class="qr-center-logo" />
                   </div>
                   <span class="qr-label">PoliX</span>
                 </div>
