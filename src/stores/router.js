@@ -1,9 +1,15 @@
 import { writable } from 'svelte/store';
 
 export function getRouteFromUrl() {
+  const base = '/sajwin.github.io';
+
+  const path = window.location.pathname
+    .replace(base, '')
+    .toLowerCase()
+    .replace(/\/$/, '') || '';
+
   if (typeof window === 'undefined') return 'home';
   
-  const path = window.location.pathname.toLowerCase().replace(/\/$/, '') || '';
   const hash = window.location.hash.toLowerCase().replace(/^#\/?/, '').replace(/\/$/, '');
 
   if (path === '/linktree/polix' || hash === 'linktree/polix' || hash === '/linktree/polix') {
